@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Profiles</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="/static/css/index.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    	<div class="page-header">
+            <a href="/"><h1>Profile Search</h1></a>
+        </div>
+    	<div class="content container">
+   			<div class="row">
+        		<div class="col-md-8">
+        			<div class="post">
+						<form action="" method="post">
+						    {% csrf_token %}
+						    {{ form.as_p }}
+						    <input type="submit" value="Submit" class="btn btn-primary btn-lg"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
